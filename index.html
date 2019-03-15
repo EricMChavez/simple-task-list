@@ -21,13 +21,13 @@
         <main class="container p-5">
             <h1 class="text-center mb-5 col-12">TO-DO</h1>
             <div class="row justify-content-center">
-                <div class="card p-0 col-5 text-dark">
+                <div class="card p-0 col-10 col-md-5 text-dark">
 
                     <div class="input-group border-bottom mb-6">
                         <div class="input-group-prepend">
-                            <button id="btn" class="bg-primary text-white input-group-text">Add Task</button>
+                            <button id="btn" onclick="add()" class="bg-primary text-white input-group-text">Add Task</button>
                         </div>
-                        <input type="text" id="input-field" required class="form-control">
+                        <input type="text" id="input-field" autofocus required class="form-control">
                     </div>
                     <div id="entries"></div>
                 </div>
@@ -35,7 +35,7 @@
         </main>
         <script src="index.js"></script>
         <script>
-            document.querySelector("#btn").addEventListener("click", add);
+            
         </script>
     </body>
 </html>
